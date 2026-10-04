@@ -1,9 +1,8 @@
-using System.Diagnostics;
 using Unity.Netcode;
 using UnityEngine;
 
 
-public class S04MainScript : NetworkBehaviour
+public class Clas4MainScript : NetworkBehaviour
 {
     public NetworkVariable<int> enviados = new(0);
 
@@ -15,18 +14,26 @@ public class S04MainScript : NetworkBehaviour
 
     }
 
-    [Rpc(SendTo.Everyone)] //->confiable
+    [Rpc(SendTo.Everyone, InvokePermission = RpcInvokePermission.Server)] //->confiable
     public void FiableRpc(int indice)
     {
         RelibleCount++;
         print(RelibleCount);
     }
 
-    [Rpc(SendTo.Everyone, Delivery = RpcDelivery.Unreliable)] //-> no confiable
+    [Rpc(SendTo.Everyone, InvokePermission = RpcInvokePermission.Server, Delivery = RpcDelivery.Unreliable)] //-> no confiable
     public void NofiableRpc(int indice)
     {
         UnRelibleCount++;
         print(UnRelibleCount);
+    }
+
+    [ContextMenu("Reiniciar ronda (solo servidor)")]
+    public void ResetRoundServer()
+    {
+        if (!IsSpawned || !IsServer) return;
+        foreach (CombatPlayer player in FindObjectsByType<CombatPlayer>(FindObjectsSortMode.None))
+            if (player.IsSpawned) player.ResetServer();
     }
 
 
