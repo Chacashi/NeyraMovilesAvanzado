@@ -1,0 +1,425 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &775000001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775000002}
+  - component: {fileID: 775000003}
+  - component: {fileID: 775000004}
+  - component: {fileID: 775000005}
+  - component: {fileID: 775000006}
+  m_Layer: 5
+  m_Name: InventarioPanel
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!224 &775000002
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 775000012}
+  m_Father: {fileID: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &775000003
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000001}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
+--- !u!114 &775000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000001}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &775000005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000001}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &775000006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000001}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: d4f609f153624543b4e113977c30a559, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::InventarioUI
+  contenido: {fileID: 775000024}
+  anterior: {fileID: 775000105}
+  siguiente: {fileID: 775000125}
+  soltar: {fileID: 775000145}
+  consumir: {fileID: 775000165}
+--- !u!1 &775000011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775000012}
+  - component: {fileID: 775000013}
+  - component: {fileID: 775000014}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!224 &775000012
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 775000022}
+  - {fileID: 775000102}
+  - {fileID: 775000122}
+  - {fileID: 775000142}
+  - {fileID: 775000162}
+  m_Father: {fileID: 775000002}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -20, y: -20}
+  m_SizeDelta: {x: 360, y: 380}
+  m_Pivot: {x: 1, y: 1}
+--- !u!222 &775000013
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000011}
+  m_CullTransparentMesh: 1
+--- !u!114 &775000014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000011}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Color: {r: 0.05, g: 0.08, b: 0.12, a: 0.95}
+  m_RaycastTarget: 0
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_FillAmount: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &775000021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775000022}
+  - component: {fileID: 775000023}
+  - component: {fileID: 775000024}
+  m_Layer: 5
+  m_Name: InventoryText
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!224 &775000022
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 775000012}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -130}
+  m_SizeDelta: {x: 320, y: 230}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &775000023
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000021}
+  m_CullTransparentMesh: 1
+--- !u!114 &775000024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000021}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_RaycastTarget: 0
+  m_text: "INVENTARIO\nVacio\n\nE: recoger / abrir cofre\nR: soltar una unidad"
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontColor: {r: 0.8, g: 1, b: 0.9, a: 1}
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_TextWrappingMode: 1
+--- !u!1001 &775100001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 775000012}
+    m_Modifications:
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -85
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000014, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_text
+      value: Anterior
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+--- !u!1 &775000101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 669000001, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &775000102 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &775000105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 669000005, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100001}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000101}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1001 &775100002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 775000012}
+    m_Modifications:
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000014, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_text
+      value: Siguiente
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+--- !u!1 &775000121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 669000001, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &775000122 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &775000125 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 669000005, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000121}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1001 &775100003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 775000012}
+    m_Modifications:
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -85
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -330
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000014, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_text
+      value: Soltar (R)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+--- !u!1 &775000141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 669000001, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &775000142 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &775000145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 669000005, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100003}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000141}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1001 &775100004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 775000012}
+    m_Modifications:
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -330
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 669000014, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+      propertyPath: m_text
+      value: Consumir
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+--- !u!1 &775000161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 669000001, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &775000162 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 669000002, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &775000165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 669000005, guid: 694c55de55f04d0298b5c44789d3ae5b, type: 3}
+  m_PrefabInstance: {fileID: 775100004}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775000161}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
